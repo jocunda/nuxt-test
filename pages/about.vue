@@ -8,11 +8,12 @@
       explicabo.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sequi qui excepturi id veritatis aliquid, a facilis
       numquam fuga odit earum voluptatem enim amet? Accusamus cupiditate qui quibusdam nostrum esse.</p>
+      <div>{{ data }}</div>
   </div>
 </template>
 
 <script setup>
-
+const { data } = await useFetch('/api/currency/GBP')
 </script>
 
 <style scoped>
